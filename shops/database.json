@@ -1,4 +1,4 @@
 [
-    {"ShopName":"The Log Shope","ShopOwner":"oza2000","ShopLocation":"0 70 0","ShopProducts":["Oak Logs"]},
-    {"ShopName":"Jazzzny's Sand Store","ShopOwner":"Jazzzny","ShopLocation":"","ShopProducts":["Sand"]}
+    {"ShopName":"The Log Shope","ShopOwner":"oza2000","ShopLocation":["0", "70", "0"],"ShopProducts":["Oak Logs"]},
+    {"ShopName":"Jazzzny's Sand Store","ShopOwner":"Jazzzny","ShopLocation":[],"ShopProducts":["Sand"]}
 ]
