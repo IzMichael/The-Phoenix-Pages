@@ -15,5 +15,5 @@ function changeText() {
     var d = document.getElementById("tips");
     d.innerHTML = 'Tip: ' + txt;
 }
-changeText()
+setTimeout("changeText()", 100)
 setInterval("changeText()", 10000);
