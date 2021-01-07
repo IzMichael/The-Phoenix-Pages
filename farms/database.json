@@ -1,3 +1,5 @@
 [
-    {"FarmName":"Hello","FarmOwner":"IzMichael","FarmLocation":["100", "64", "-432"],"FarmProducts":["A", "B", "C"]}
+    {"FarmName":"Community Sugarcane Farm","FarmOwner":"","FarmLocation":["273", "63", "4"],"FarmProducts":["Sugarcane"]},
+    {"FarmName":"Community Cow Farm","FarmOwner":"","FarmLocation":["262", "65", "34"],"FarmProducts":["Leather", "Beef", "Cows", "Milk"]},
+    {"FarmName":"Community Wheat Farm","FarmOwner":"","FarmLocation":["268", "67", "41"],"FarmProducts":["Wheat"]}
 ]
