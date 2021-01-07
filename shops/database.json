@@ -4,5 +4,7 @@
     {"ShopName":"i39's Book Store","ShopOwner":"i39","ShopLocation":["287", "67", "33"],"ShopProducts":["Mending", "Efficiency 5", "Silk Touch", "Looting 3"]},
     {"ShopName":"Willow's Books","ShopOwner":"Will0ww","ShopLocation":["291", "67", "26"],"ShopProducts":["Books"]},
     {"ShopName":"Tar's Slime Shop","ShopOwner":"Targuien","ShopLocation":["292", "67", "19"],"ShopProducts":["Slime Balls"]},
-    {"ShopName":"PHG's Silk Touch","ShopOwner":"PoopHeadMcgee","ShopLocation":["285", "67", "24"],"ShopProducts":["Silk Touch"]}
+    {"ShopName":"PHG's Silk Touch","ShopOwner":"PoopHeadMcgee","ShopLocation":["285", "67", "24"],"ShopProducts":["Silk Touch"]},
+    {"ShopName":"Kitty's Aquatic Treasures","ShopOwner":"Kittymatthew","ShopLocation":["289", "68", "29"],"ShopProducts":["Fish", "Treasures"]},
+    {"ShopName":"OnlyMichael's Landscaping Service","ShopOwner":"OnlyMichael","ShopLocation":["291", "67", "11"],"ShopProducts":["Landscaping Services"]}
 ]
