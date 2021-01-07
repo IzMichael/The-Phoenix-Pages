@@ -8,20 +8,20 @@
         <link rel="stylesheet" href="https://resources.izmichael.xyz/assets/tailwind2.css">
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="/assets/js/import-html.js"></script>
-        <script src="/assets/js/main.js"></script>
         <link rel="icon" type="image/png" href="/favicon.png"/>
         <link rel="icon" type="image/png" href="https://phoenix-pages.izmichael.xyz/favicon.png"/>
         <link rel="stylesheet" href="/assets/styles.css">
     </head>
 
     <body class="screen flex flex-col">
-        <header class="bg-yellow-400 p-5 flex flex-col justify-center items-center font-bold">
-            <h1 class="text-3xl mb-2">The Phoenix Pages - Shops</h1>
+        <header class="bg-yellow-400 p-5 flex flex-col justify-center items-center">
+            <h1 class="text-3xl mb-2 font-bold">The Phoenix Pages - Shops</h1>
             <div class="flex flex-row justify-center gap-16 w-full">
                 <a href="/">Home</a>
                 <a href="/shops">Shops</a>
                 <a href="/farms">Farms</a>
             </div>
+            <p class="italic mt-2 text-md" id="tips"></p>
         </header>
         <div class="flex flex-col justify-center items-center screen p-64 bg-gray-300 absolute z-50 hidden bg-clip-padding" id="addShopDialog">
             <h1 class="text-3xl mb-6">Add a shop to the registry</h1>
@@ -75,6 +75,7 @@
             <h3 class="text-lg">&copy; <a href="https://izmichael.xyz">IzMichael</a> 2020</h3>
             <h3 class="text-lg">Not affiliated with The Yellow Pages.</h3>
         </footer>
+        <script src="/assets/js/main.js"></script>
     </body>
 
 </html>
