@@ -1,13 +1,14 @@
 var words = [
     "You can click on the coordinates to go to those coordinates on Dynmap",
-    "You can add a shop or farm by clicking the 'Add' button below the database"
+    "You can add a shop or farm by clicking the 'Add' button below the database",
+    "You can see every change made by going to the 'Logs' page"
 ];
 var i = 0;
 var text = "This text changes";
 
 function getChangedText() {
     i = (i + 1) % words.length;
-    return text.replace(/This text changes/, words[i]);
+    return words[i];
 }
 
 function changeText() {
@@ -15,5 +16,5 @@ function changeText() {
     var d = document.getElementById("tips");
     d.innerHTML = 'Tip: ' + txt;
 }
-setTimeout("changeText()", 100)
+setTimeout("changeText()", 1000)
 setInterval("changeText()", 10000);
