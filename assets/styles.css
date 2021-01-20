@@ -137,3 +137,12 @@ a {
         opacity: 1;
     }
 }
+
+.logEntry {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    border-color: rgba(128, 128, 128);
+    border-bottom: 1px solid;
+    width: 100%;
+}
