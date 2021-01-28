@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="../assets/styles.css">
     </head>
 
-    <body class="screen flex flex-col">
+    <body class="screen flex flex-col" onload="sortTable('Name')">
         <header class="bg-yellow-400 p-5 flex flex-col justify-center items-center"></header>
         <div class="flex flex-col justify-center items-center screen p-64 bg-gray-300 absolute z-50 hidden bg-clip-padding" id="addShopDialog">
             <h1 class="text-3xl mb-6">Add a shop to the registry</h1>
@@ -38,7 +38,7 @@
                     <h1 class="text-xl w-full">What does the shop sell?</h1>
                     <input type="text" name="What does the shop sell?" class="p-3 rounded-lg w-full outline-none" required>
                 </div>
-                <input type="hidden" name="_next" value="https://phoenix-pages.izmichael.xyz/farms">
+                <input type="hidden" name="_next" value="https://phoenix-pages.izmichael.xyz/shops">
                 <input type="text" name="_honey" style="display:none">
                 <input type="hidden" name="_captcha" value="false">
                 <button onclick="hideDialog()" class="bg-red-400 p-3 rounded-lg">Cancel</button>
@@ -52,10 +52,10 @@
                 <div class="flex-1 rounded-lg overflow-hidden shadow-md">
                     <table id="shopTable" class="w-full h-full">
                         <tr>
-                            <th class="text-xl">Shop Name</th>
-                            <th class="text-xl">Shop Owner</th>
-                            <th class="text-xl">Shop Location</th>
-                            <th class="text-xl">Products</th>
+                            <th class="text-xl" onclick="sortTable('Name')">Shop Name</th>
+                            <th class="text-xl" onclick="sortTable('Owner')">Shop Owner</th>
+                            <th class="text-xl" onclick="sortTable('Location')">Shop Location</th>
+                            <th class="text-xl" onclick="sortTable('Products')">Products</th>
                         </tr>
                     </table>
                 </div>

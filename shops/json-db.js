@@ -54,7 +54,7 @@ $(document).ready(function () {
                     value.ShopLocation[0] + ' ' + value.ShopLocation[1] + ' ' + value.ShopLocation[2] + ' ' + '</a></td>';
 
                 shops += '<td>' +
-                    value.ShopProducts.join(', ') + '</td>';
+                    value.ShopProducts.sort().join(', ') + '</td>';
 
                 shops += '</tr>';
             });
@@ -63,3 +63,30 @@ $(document).ready(function () {
             $('#shopTable').append(shops);
         });
 });
+
+function sortTable(col) {
+    var table, rows, switching, i, x, y, shouldSwitch;
+    const cols = ["Name", "Owner", "Location", "Products"]
+    var column = cols.indexOf(col)
+    table = document.getElementById("shopTable");
+    switching = true;
+    while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+            shouldSwitch = false;
+            x = rows[i].getElementsByTagName("TD")[column];
+            y = rows[i + 1].getElementsByTagName("TD")[column];
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                shouldSwitch = true;
+                break;
+            }
+        }
+        if (shouldSwitch) {
+            /* If a switch has been marked, make the switch
+            and mark that a switch has been done: */
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+        }
+    }
+}
