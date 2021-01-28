@@ -12,7 +12,7 @@ function parseCommits(data) {
     for (index = 0; index < data.length; ++index) {
         const list = document.getElementById('commitList');
         var commit = data[index];
-        list.innerHTML = list.innerHTML + '<div class="logEntry"><p class="w-64">' + parseDate(commit.commit.committer.date) + '</p><p class="flex-1">' + commit.commit.message + '</p><p class="w-24 text-right">' + commit.commit.committer.name + '</p></div>'
+        list.innerHTML = list.innerHTML + '<div class="logEntry"><p class="w-64">' + parseDate(commit.commit.committer.date) + '</p><p class="flex-1">' + commit.commit.message.replace('<', '&lt;') + '</p><p class="w-24 text-right">' + commit.commit.committer.name + '</p></div>'
     }
 }
 
