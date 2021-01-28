@@ -62,7 +62,7 @@ tr:nth-child(odd) {
 
 a {
     color: rgb(53, 105, 201);
-    font-weight: bold;
+    cursor: pointer;
 }
 
 .fadeOut {
