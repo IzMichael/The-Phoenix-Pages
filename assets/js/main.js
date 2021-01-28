@@ -1,5 +1,5 @@
 var words = [
-    "You can click on the coordinates to go to those coordinates on Dynmap",
+    "You can click on coordinates to go to those coordinates on Dynmap",
     "Click on a shop product to see all the shops that sell that product",
     "Right Click on the search box to clear the search",
     "You can add a Shop or PRN Station by clicking the 'Add' button below the database",
@@ -20,5 +20,5 @@ function changeText() {
     var d = document.getElementById("tips");
     d.innerHTML = 'Tip: ' + txt;
 }
-setTimeout("changeText()", 1000)
+// setTimeout("changeText()", 1000)
 setInterval("changeText()", 10000);
