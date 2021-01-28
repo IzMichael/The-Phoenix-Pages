@@ -70,6 +70,13 @@ async function searchStn(product) {
     searchStations();
 }
 
+async function clearBox() {
+    const input = document.getElementById("searchStations");
+    input.value = '';
+    searchStations();
+    return false;
+}
+
 function sortTable(col) {
     var table, rows, switching, i, x, y, shouldSwitch;
     const cols = ["Name", "Location", "Connections"]

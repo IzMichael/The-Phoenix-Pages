@@ -75,6 +75,13 @@ async function searchProd(product) {
     searchProducts();
 }
 
+async function clearBox() {
+    const input = document.getElementById("searchProducts");
+    input.value = '';
+    searchProducts();
+    return false;
+}
+
 function sortTable(col) {
     var table, rows, switching, i, x, y, shouldSwitch;
     const cols = ["Name", "Owner", "Location", "Products"]
