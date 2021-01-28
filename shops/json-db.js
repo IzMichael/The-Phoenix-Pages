@@ -54,12 +54,12 @@ $(document).ready(function () {
                     value.ShopLocation[0] + ' ' + value.ShopLocation[1] + ' ' + value.ShopLocation[2] + ' ' + '</a></td>';
 
                 shops += '<td>';
-                value.ShopProducts.sort().forEach(function(entry) {
+                value.ShopProducts.sort().forEach(function (entry) {
                     shops += '<a onclick="searchProd(' + "'" + entry + "'" + ')">' + entry + '</a>, ';
                 });
                 shops += '</td>';
-                    
-                    
+
+
 
                 shops += '</tr>';
             });

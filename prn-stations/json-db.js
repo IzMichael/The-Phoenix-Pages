@@ -51,7 +51,7 @@ $(document).ready(function () {
                     value.StationLocation[0] + ' ' + value.StationLocation[1] + ' ' + value.StationLocation[2] + ' ' + '</a></td>';
 
                 stations += '<td>';
-                value.StationConnections.sort().forEach(function(entry) {
+                value.StationConnections.sort().forEach(function (entry) {
                     stations += '<a onclick="searchStn(' + "'" + entry + "'" + ')">' + entry + '</a>, ';
                 });
                 stations += '</td>';

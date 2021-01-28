@@ -1,7 +1,9 @@
 function load() {
     fetch('https://api.github.com/repos/IzMichael/The-Phoenix-Pages/commits')
         .then(response => response.json())
-        .then(data => {parseCommits(data)});
+        .then(data => {
+            parseCommits(data)
+        });
 }
 
 function parseCommits(data) {
