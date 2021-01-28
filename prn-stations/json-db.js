@@ -50,8 +50,11 @@ $(document).ready(function () {
                 stations += '<td><a href="' + dmapURL + '&x=' + value.StationLocation[0] + '&y=' + value.StationLocation[1] + '&z=' + value.StationLocation[2] + '">' +
                     value.StationLocation[0] + ' ' + value.StationLocation[1] + ' ' + value.StationLocation[2] + ' ' + '</a></td>';
 
-                stations += '<td>' +
-                    value.StationConnections.sort().join(', ') + '</td>';
+                stations += '<td>';
+                value.StationConnections.sort().forEach(function(entry) {
+                    stations += '<a onclick="searchStn(' + "'" + entry + "'" + ')">' + entry + '</a>, ';
+                });
+                stations += '</td>';
 
                 stations += '</tr>';
             });
@@ -60,6 +63,12 @@ $(document).ready(function () {
             $('#stationTable').append(stations);
         });
 });
+
+async function searchStn(product) {
+    const input = document.getElementById("searchStations");
+    input.value = product;
+    searchStations();
+}
 
 function sortTable(col) {
     var table, rows, switching, i, x, y, shouldSwitch;

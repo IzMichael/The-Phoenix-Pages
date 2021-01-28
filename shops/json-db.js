@@ -53,8 +53,13 @@ $(document).ready(function () {
                 shops += '<td><a href="' + dmapURL + '&x=' + value.ShopLocation[0] + '&y=' + value.ShopLocation[1] + '&z=' + value.ShopLocation[2] + '">' +
                     value.ShopLocation[0] + ' ' + value.ShopLocation[1] + ' ' + value.ShopLocation[2] + ' ' + '</a></td>';
 
-                shops += '<td>' +
-                    value.ShopProducts.sort().join(', ') + '</td>';
+                shops += '<td>';
+                value.ShopProducts.sort().forEach(function(entry) {
+                    shops += '<a onclick="searchProd(' + "'" + entry + "'" + ')">' + entry + '</a>, ';
+                });
+                shops += '</td>';
+                    
+                    
 
                 shops += '</tr>';
             });
@@ -63,6 +68,12 @@ $(document).ready(function () {
             $('#shopTable').append(shops);
         });
 });
+
+async function searchProd(product) {
+    const input = document.getElementById("searchProducts");
+    input.value = product;
+    searchProducts();
+}
 
 function sortTable(col) {
     var table, rows, switching, i, x, y, shouldSwitch;
