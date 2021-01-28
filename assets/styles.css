@@ -26,6 +26,8 @@ th {
 
 td {
     text-align: center;
+    padding-left: 0.4rem;
+    padding-right: 0.5rem;
 }
 
 th:not(:first-child) {
