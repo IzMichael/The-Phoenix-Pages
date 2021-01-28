@@ -1,6 +1,7 @@
 var words = [
     "You can click on the coordinates to go to those coordinates on Dynmap",
-    "You can add a shop or farm by clicking the 'Add' button below the database",
+    "You can add a Shop or PRN Station by clicking the 'Add' button below the database",
+    "You can click on the column header to sort that column alphabetically",
     "You can see every change made by going to the 'Logs' page"
 ];
 var i = 0;
