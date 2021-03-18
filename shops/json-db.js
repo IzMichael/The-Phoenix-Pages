@@ -50,8 +50,13 @@ $(document).ready(function () {
                 shops += '<td>' +
                     value.ShopOwner + '</td>';
 
-                shops += '<td><a href="' + dmapURL + '&x=' + value.ShopLocation[0] + '&y=' + value.ShopLocation[1] + '&z=' + value.ShopLocation[2] + '">' +
-                    value.ShopLocation[0] + ' ' + value.ShopLocation[1] + ' ' + value.ShopLocation[2] + ' ' + '</a></td>';
+                if (value.ShopLocation.length = 3) {
+                    shops += '<td><a href="' + dmapURL + '&x=' + value.ShopLocation[0] + '&y=' + value.ShopLocation[1] + '&z=' + value.ShopLocation[2] + '">' +
+                        value.ShopLocation[0] + ' ' + value.ShopLocation[1] + ' ' + value.ShopLocation[2] + ' ' + '</a></td>';
+                } else {
+                    shops += '<td>' + 
+                        value.ShopLocation + '</td>';
+                }
 
                 shops += '<td>';
                 value.ShopProducts.sort().forEach(function (entry) {
