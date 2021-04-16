@@ -22,3 +22,33 @@ function changeText() {
 }
 // setTimeout("changeText()", 1000)
 setInterval("changeText()", 10000);
+
+var fullscreen = false;
+
+window.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        togglefullscreen()
+        console.log('esc')
+    }
+    return
+})
+function togglefullscreen() {
+    var header = document.getElementsByTagName('header')[0]
+    var footer = document.getElementsByTagName('footer')[0]
+    if (fullscreen === false) {
+        header.style.display = 'none';
+        footer.style.display = 'none';
+        fullscreen = true;
+        Swal.fire({
+            position: 'top-end',
+            icon: 'info',
+            title: 'Press "Esc" to return',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    } else {
+        header.style.display = 'flex';
+        footer.style.display = 'flex';
+        fullscreen = false;
+    }
+}

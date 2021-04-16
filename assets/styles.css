@@ -65,6 +65,11 @@ a {
     cursor: pointer;
 }
 
+.a {
+    color: rgb(53, 105, 201);
+    cursor: pointer;
+}
+
 .fadeOut {
     -webkit-animation: fade-out 2s ease-in infinite both;
     animation: fade-out 2s ease-in infinite both;
@@ -147,4 +152,8 @@ a {
     border-color: rgba(128, 128, 128);
     border-bottom: 1px solid;
     width: 100%;
+}
+
+.maincolor {
+    background-color: rgb(255, 202, 68);
 }
