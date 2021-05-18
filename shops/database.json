@@ -18,5 +18,6 @@
     {"ShopName":"Zochy's","ShopOwner":"Zoclhas","ShopLocation":["-1779", "70", "1412"],"ShopProducts":["Cooked Porkchop", "Leather", "Beacons", "Wither Roses", "Bone Blocks", "Coal Blocks"]},
     {"ShopName":"Pen's Pretties","ShopOwner":"TheMightyPenPen","ShopLocation":["-1735", "69", "1588"],"ShopProducts":["Wool", "End Rods", "Lecterns", "Cartography Tables", "Noteblocks", "Looms", "Paintings", "Item Frames", "Ferns", "Roses", "Lilacs", "Sunflowers", "Peonies", "Pots", "Turtle Eggs", "Book And Quill"]},
     {"ShopName":"New Edoras","ShopOwner":"ProLoafer, TheMightyPenPen","ShopLocation":["-57", "70", "473"],"ShopProducts":["Horses"]},
-    {"ShopName":"The Costume Shop","ShopOwner":"TheMightyPenPen","ShopLocation":["-1698", "69", "1648"],"ShopProducts":["Player Heads", "Mob Heads", "Costumes"]}
+    {"ShopName":"The Costume Shop","ShopOwner":"TheMightyPenPen","ShopLocation":["-1698", "69", "1648"],"ShopProducts":["Player Heads", "Mob Heads", "Costumes"]},
+    {"ShopName":"Boxes of Blocks","ShopOwner":"Scrounge","ShopLocation":["-1699", "69", "1568"],"ShopProducts":["Dirt", "Cobblestone"]}
 ]
